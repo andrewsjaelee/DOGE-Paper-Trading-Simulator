@@ -1,4 +1,7 @@
 # DOGE Paper Trading Simulator
+<p align="center">
+<img width="253" alt="Screen_Shot_2022-09-30_at_8 19 11_PM-removebg-preview" src="https://user-images.githubusercontent.com/97712948/193384507-dfe6e656-ea99-4723-b364-15e1391c6213.png">
+ </p>
 
 A paper trading cryptocurrency simulator for the DOGEUSDT Token. Testing two investing strategies, the first being a  momentum swing trading algorithm, and the other being an Elon Musk Tweet Sentiment strategy. 
 
