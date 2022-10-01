@@ -16,7 +16,10 @@ pip instal transformers
 ## How it works
 First you need to run the `data.ipynb` notebook to get live DOGEUSDT data into your `Liveprice.db`.
 
-Optionally, you can visualize the price of DOGE through the `visualizer.ipynb` notebook.
+Optionally, you can visualize the price of DOGE through the `visualizer.ipynb` notebook. The visualization should like the example below.
+<p align="center">
+  <img width="615" alt="Screen Shot 2022-09-30 at 5 55 31 PM" src="https://user-images.githubusercontent.com/97712948/193379232-df6fc8d7-7f04-4c7b-828d-41c8265a3b40.png">
+ </p>
 
 To try the different strategies, simply run either the `elon_investing.py` or `investing.py`
 
@@ -28,10 +31,19 @@ When `tweetScraper.py` is called, it returns the most recent tweet that includes
 
 A more negative tweet will result in purchasing less DOGE, vice-versa.
 
-## Backtesting the Strategies 
+## Backtesting the Strategies
 ### Momentum Swing Strategy
+<p align="center">
+  <img width="282" alt="Screen Shot 2022-09-30 at 5 42 41 PM" src="https://user-images.githubusercontent.com/97712948/193379483-c0c1fd06-2a38-4e37-a842-2d969ca07b18.png">
+</p>
+We find a lot less trades executing with this strategy because it only buys DOGE when it is below the mean price.
 
 ### Elon Tweet Sentiment Strategy
+<p align="center">
+  <img width="281" alt="Screen Shot 2022-09-30 at 5 54 46 PM" src="https://user-images.githubusercontent.com/97712948/193379531-e3b39554-de69-4c70-a549-e495b8ab919d.png">
+</p>
 
+### Implications
+The return of both strategies are dependent on high short-term volatility, hence, if there was upward momentum in the short-run, we will likely see the Momentum Strategy executing few trades with relatively positive returns. Likewise for the Elon Strategy, however, if we ran `elon_investing.py` during a period of downward momentum we would see a compounding negative return.
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
